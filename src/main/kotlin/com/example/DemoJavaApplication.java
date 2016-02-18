@@ -68,7 +68,7 @@ public class DemoJavaApplication {
     private static final class FooFilter implements GenericSelector<Integer> {
 
         @Override
-        public boolean accept(Integer p) {
+        public final boolean accept(Integer p) {
             return  p > 0;
         }
     }
